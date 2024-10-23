@@ -23,7 +23,6 @@ public class LogementRessources {
          return  Response.status(Status.CREATED).build();
      return  Response.status(Status.NOT_FOUND).build();
     }
-
     @Secured
 @GET
 @Produces(MediaType.APPLICATION_JSON)
@@ -32,7 +31,6 @@ public class LogementRessources {
     if(liste.size()==0)
         return  Response.status(Status.NOT_FOUND).build();
     return  Response.status(Status.OK).entity(liste).build();
-
 
     }
 
